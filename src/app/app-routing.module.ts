@@ -4,15 +4,19 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
+import { ResidenceComponent } from './residence/residence.component';
+import { ApartementComponent } from './apartement/apartement.component';
 
 const routes: Routes = [
   // path par defaut
   {path : '' , redirectTo : 'home', pathMatch : 'full'},
   {path : 'home', component: HomeComponent},
   {path : 'product' ,  component : ProductComponent},
+  {path : 'residence' ,  component : ResidenceComponent},
 
-// route parametré 
+// route parametré
   {path : 'detail/:id', component: DetailProductComponent},
+  {path : 'apartement/:id', component: ApartementComponent},
   // route Not found
   {path : '**' , component: NotFoundComponent},
 

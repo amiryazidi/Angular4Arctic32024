@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
+import { ResidenceComponent } from './residence/residence.component';
+import { ApartementComponent } from './apartement/apartement.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
     ProductComponent,
     NavbarComponent,
     NotFoundComponent,
-    DetailProductComponent
+    DetailProductComponent,
+    ResidenceComponent,
+    ApartementComponent
   ],
   imports: [
     BrowserModule,
