@@ -8,13 +8,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormComponent {
 
-  login= new FormControl('amir',[Validators.required,Validators.minLength(6)]);
+  login= new FormControl('',[Validators.required,Validators.minLength(6)]);
   pwd=new FormControl('',Validators.required);
 
 
   ResgisterForm = new FormGroup({
-    nom : new FormControl('Amir',[Validators.required,Validators.minLength(6)]),
-    prenom : new FormControl('yazidi',[Validators.required,Validators.minLength(6)]),
+    nom : new FormControl('',[Validators.required,Validators.minLength(6)]),
+    prenom : new FormControl('',[Validators.required,Validators.minLength(6)]),
     email : new FormControl('',[Validators.required,Validators.email]),
     tel : new FormControl('',[Validators.required,Validators.pattern('[0-9]{8}')]),
 
