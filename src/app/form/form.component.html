@@ -1,0 +1,31 @@
+<p>FormControl</p>
+<label>Login</label>
+
+
+<input type="text" [formControl]="login">
+
+
+<label>Password</label>
+<input type="text" [formControl]="pwd">
+
+<input type="submit" value="save" (click)="save()" [disabled]="login.invalid  || pwd.invalid">
+
+<p>FormGroup</p>
+<form [formGroup]="ResgisterForm">
+    <label>Nom</label>
+    <input type="text" formControlName="nom">
+
+
+    <label>prenom</label>
+    <input type="text" formControlName="prenom">
+
+
+    <label>email</label>
+    <input type="text" formControlName="email">
+
+
+    <label>tel</label>
+    <input type="text" formControlName="tel">
+    <input type="submit" value="save" (click)="test()" [disabled]="ResgisterForm.invalid">
+
+</form>
