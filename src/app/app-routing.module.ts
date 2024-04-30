@@ -8,6 +8,7 @@ import { ResidenceComponent } from './residence/residence.component';
 import { ApartementComponent } from './apartement/apartement.component';
 import { FormComponent } from './form/form.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 const routes: Routes = [
   // path par defaut
@@ -21,6 +22,7 @@ const routes: Routes = [
 // route parametré
   {path : 'detail/:id', component: DetailProductComponent},
   {path : 'apartement/:id', component: ApartementComponent},
+  {path : 'updateP/:id', component: UpdateProductComponent},
   // route Not found
   {path : '**' , component: NotFoundComponent},
 

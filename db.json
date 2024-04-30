@@ -1,9 +1,11 @@
 {
-    "products": [{
-        "id": 1,
-        "title": "json-server",
-        "price": 500,
-        "quantity": 100,
-        "like": 5
-    }]
+  "products": [
+    {
+      "id": "5",
+      "title": "iphone 16",
+      "price": "300",
+      "quantity": "5",
+      "like": "0"
+    }
+  ]
 }

@@ -20,9 +20,11 @@ la quantité des produits egale 0 est : {{alert}}
             <td>{{p.quantity}}</td>
             <td>{{p.like}}</td>
             <td><button (click)="increment(i)" class="btn btn-primary">Like</button></td>
+            <td><button (click)="delete(p.id)" class="btn btn-danger">Delete</button></td>
 
             <td><button (click)="buy(i)" [disabled]="p.quantity==0" class="btn btn-primary">buy</button></td>
             <td><button [routerLink]="['/detail',p.id]"> detail</button></td>
+            <td><button [routerLink]="['/updateP',p.id]"> Update</button></td>
         </ng-container>
     </tr>
 </table>
