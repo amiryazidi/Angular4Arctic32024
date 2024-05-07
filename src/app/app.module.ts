@@ -15,6 +15,9 @@ import { FormComponent } from './form/form.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowOneProductComponent } from './show-one-product/show-one-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,10 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     ApartementComponent,
     FormComponent,
     AddProductComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    TvComponent,
+    MobileComponent,
+    ShowOneProductComponent
   ],
   imports: [
     BrowserModule,

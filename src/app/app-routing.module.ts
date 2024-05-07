@@ -9,6 +9,8 @@ import { ApartementComponent } from './apartement/apartement.component';
 import { FormComponent } from './form/form.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
 
 const routes: Routes = [
   // path par defaut
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path : 'residence' ,  component : ResidenceComponent},
   {path : 'login' ,  component : FormComponent},
   {path : 'addProd' ,  component : AddProductComponent},
+  {path : 'tv' ,  component : TvComponent},
+  {path : 'mobile' ,  component : MobileComponent},
 
 // route parametré
   {path : 'detail/:id', component: DetailProductComponent},
